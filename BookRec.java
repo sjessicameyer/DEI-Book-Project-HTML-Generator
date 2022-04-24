@@ -58,7 +58,7 @@ public class BookRec{
   }
   
   public String toString(){
-    return getFileContents("1.txt")+tags+getFileContents("2.txt")+googleDriveID+getFileContents("3.txt")+titleAndAuthor+getFileContents("4.txt")+review+" -LPS "+grade+" grader"+getFileContents("5.txt");
+    return getFileContents("1.txt")+tags+getFileContents("2.txt")+googleDriveID+getFileContents("3.txt")+titleAndAuthor+getFileContents("4.txt")+"\""+review+"\" -LPS "+grade+" grader"+getFileContents("5.txt");
   }
 
   private String getFileContents(String path){

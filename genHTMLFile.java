@@ -5,11 +5,11 @@ import java.nio.file.Files;
 import java.nio.charset.*;
 import java.nio.file.*;
 
-public class genBookRecs{
+public class genHTMLFile{
   private String[][] data;
   private ArrayList<BookRec> recs = new ArrayList<BookRec>();
   private ArrayList<String> tags = new ArrayList<String>();
-  public genBookRecs() throws Exception{
+  public genHTMLFile() throws Exception{
     //import data from tsv file
     Scanner sc = new Scanner(new File("recommendations.tsv"));
     List<String[]> lines = new ArrayList<String[]>();
@@ -42,14 +42,16 @@ public class genBookRecs{
       }
     }
 
-    //tester
-    System.out.print(getFileContents("-2.txt"));
+    //gen file
+    PrintWriter out = new PrintWriter(new File("output.html"));
+    out.print(getFileContents("-2.txt"));
     for (String tag : tags)
-      System.out.print(getFileContents("-1.txt").replace("FILTER",tag));
-    System.out.print(getFileContents("0.txt"));
+      out.print(getFileContents("-1.txt").replace("FILTER",tag));
+    out.print(getFileContents("0.txt"));
     for (BookRec rec : recs)
-      System.out.print(rec.toString());
-    System.out.print(getFileContents("6.txt"));
+      out.print(rec.toString());
+    out.print(getFileContents("6.txt"));
+    out.close();
   }
   
   private String getFileContents(String path){

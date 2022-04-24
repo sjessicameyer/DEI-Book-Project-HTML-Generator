@@ -23,7 +23,8 @@ p	{
 }
 .filterDiv {
   float: left;
-  width: 30%;
+  width: 32.5%;
+  min-width:200px;
   line-height: 100px;
   margin: 2px;
   display: none;
@@ -39,8 +40,14 @@ p	{
 
 .container {
   margin-top: 20px;
-  overflow-y:auto
+  overflow-y:auto;
 }
+
+.grid-sizer{
+  width:33%;
+  min-width:200px;
+}
+
 
 /* Style the buttons */
 .btn {

@@ -7,7 +7,7 @@ import java.lang.Exception.*;
 class Main {
   public static void main(String[] args) {
     try{
-      new genBookRecs();
+      new genHTMLFile();
     }catch(Exception e){
       StringWriter sw = new StringWriter();
       PrintWriter pw = new PrintWriter(sw);

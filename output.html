@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<style>
+img {
+	width:100%;
+}
+.title	{
+    margin-top: 10px;
+	color: rgba(111,116,152,1);
+    font-family: Roboto, sans-serif;
+    font-size: 13pt;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.63;
+}
+p	{
+    margin-top: 10px;
+    color: rgba(33,33,33,1);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 1.56;
+}
+.filterDiv {
+  float: left;
+  width: 32.5%;
+  line-height: 100px;
+  margin: 2px;
+  display: none;
+}
+
+.content {
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow-y:auto
+}
+
+.grid-sizer{
+  width:33%
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+<body>
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+</div>
+<div class="container">  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=14IJwW6PR-gkClTQ7fjQONvOrF65acSsV" alt="" />
+    <div class="title">Julian is a Mermaid</div>
+    <p>"This book is about a little kid who wants to be a mermaid and dress up, it’s shows kids they can express themselves however they want and it’s more than okay to be themselves. It’s not specifically about any identity or anything, just it’s okay to be you :) It has amazing art and is just a sweet book. " -LPS 10th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1LbtC011GO72TaSuTekT3Q3OAevogCkJ8" alt="" />
+    <div class="title">George by Alex Gino (and its sequel, Rick, by the same author) </div>
+    <p>"I think kids should be exposed to more diverse literature at an earlier age, and this book is an LGBTQ+ book written by an LGBTQ+ author." -LPS 9th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1rlFX6VL7GtmmHphCg_yw9AO1nTpnPW4Y" alt="" />
+    <div class="title">Year of the Rat and Year of the Dog</div>
+    <p>"This was the first book that I read in elementary school that mirrored by life experience up until that point. I carried it around with me wherever I went because she narrated the story so beautifully and it was her true life experience- the ups, the downs, the real moments. The Year of the Dog is a children’s novel by Grace Lin which follows the journey of young Pacy as she attempts to figure out who she is over the course of the Chinese Year of the Dog. When the novel begins, Pacy and her family –Taiwanese/Chinese-Americans living in New Hartford, New York – celebrate the Chinese New Year, which will serve to be the Year of the Dog. Such a year is meant to be full of good luck, family, wealth, and friendships ... Pacy comes to realize that the Year of the Dog was fantastic after all, not just for friends, family, and wealth, but because Pacy now knows who she is and what she wants to do with her life." -LPS 12th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1j_DJ2xPrTnAM-VG6Y3Kd9D3aFDoqU1K7" alt="" />
+    <div class="title">I Promise - LeBron James</div>
+    <p>"It shows diversity and promotes community. "This picture book by basketball superstar LeBron James proposes promises that children can take on, including to attend school and listen to their teachers, to ask questions, to persist, to try their best, to be helpful and respectful to others, promises James says were inspired by "the big dreams of kids in my hometown and around the world." Quoted from GoodReads" -LPS 7th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1SuEB8XQXSZRM7Q8CVuSzL67hKTmqQ6EN" alt="" />
+    <div class="title">My Rainbow by Trinity Neal</div>
+    <p>"It's based on Neal's real life, so it really tells the story of a Black transgender girl who is autistic. I think it's really important to show younger students that there are books like these who represent these identities." -LPS 8th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1L-ELQUfOKbxdBr2rglt8VzRB_N2vazCW" alt="" />
+    <div class="title">Man up by Riley Campbell, London Jones and Shiri</div>
+    <p>"It's about a boy who crys and all his friends tell him that he can't since he is a "man."" -LPS 7th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1RIpM8N3Jxn1q-29FWzPHwprQi9bORZB6" alt="" />
+    <div class="title">Aru Sha Series by Roshani Chokshi</div>
+    <p>"The main character is Indian, and the entire book is about Hindu mythology." -LPS 7th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1rk-OagshMj5WbeeW0DTip9-hL-t2slZm" alt="" />
+    <div class="title">My Princess Boy Book by Cheryl Kilodavis</div>
+    <p>"This book is important because it shows how kids can represent themselves however they want." -LPS 7th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1rdQpKO1CiiRdg0FA0Y4IR7TlJ7C1omYD" alt="" />
+    <div class="title">Women in Science: 50 Fearless Pioneers Who Changed the World Book by Rachel Ignotofsky</div>
+    <p>"I think this book is important because it shows how women can be scientists too!" -LPS 7th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1ZBFubFifgt1cr8lZlq8e9XMVHiU3650p" alt="" />
+    <div class="title">Insignificant Events in the Life of a Cactus Book by Dusti Bowling</div>
+    <p>"It is about a girl with a disability who solves a seemlingly unsolvable mystery." -LPS 7th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1zfxOL9A-ef5h2X38lQ-vOScXfr_ZesKq" alt="" />
+    <div class="title">She Persisted Series by Chelsea Clinton</div>
+    <p>"I think this book is important because it shows how women can follow their dreams!" -LPS 7th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1TtuMUMmR_kjf8uZ-TgdYXnOwBuP-JIO5" alt="" />
+    <div class="title">The Gutsy Girl: Escapades for Your Life of Epic Adventure Book by Caroline Paul</div>
+    <p>"I think this book is important because it can show that women are strong, and powerful!!!" -LPS 7th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1u578s1x2jksfoo2j1ByNyJGtKnLdAdbz" alt="" />
+    <div class="title">She Who Became The Sun by Shelly parker-chan</div>
+    <p>"She Who Became The Sun is a genderqueer retelling of the origin story of one of China’s most iconic historical figures: Zhu Yuanzhang, founding emperor of the Ming Dynasty." -LPS 7th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=10KJmvKbZWA_J-ZLA7fP7l-wD1qL_weMv" alt="" />
+    <div class="title">When Aiden Became a Brother </div>
+    <p>"It can show younger kids and older kids to, the importance to respect people who aren't straight, and the importance of the topic." -LPS 7th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1jkI7VRAmsbvp2FKYFw8temR88LGeNW2m/" alt="" />
+    <div class="title">Ghost Boys by Jewell Parker Rhodes</div>
+    <p>"This tells the story of a young black boy killed because of racism, and the injustice of our judicial system." -LPS 7th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1savr_sxOQ8-nbVTYvClE5MHFpqkYCFsc" alt="" />
+    <div class="title">Amina's Voice by Hena Khan</div>
+    <p>"[Amina's voice] is about a girl named Amina, who has never been comfortable in the spotlight. She is happy just hanging out with her best friend, Soojin. Except now that she’s in middle school everything feels different. Soojin is suddenly hanging out with Emily, one of the “cool” girls in the class, and even talking about changing her name to something more “American.”  I can relate to this book because life can change when you start middle school, with your friends growing up and becoming mature, leaving you behind in the dust. (or maybe you're the one doing the growing up?) This book shows you these changes through the eyes of Amina, who doesn't know if she should change to, or hide who she is to fit in." -LPS 8th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1Zioyw7jwt-mkWIyua6nQSgBGLfUtT_OA" alt="" />
+    <div class="title">A Good Kind of Trouble by Lisa Ramee</div>
+    <p>"This book has good themes in it, and I feel like people (and elementary students) can resonate with them." -LPS 8th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1sBtwTN8lYFU6PEyLRFJJiDIM0f60-Sbs" alt="" />
+    <div class="title">The Prince and the Dressmaker, by Jen Wang</div>
+    <p>"This book revolves around a gender fluid prince and a dream chasing girl, with an interesting, brilliant, perhaps even slightly romantic plot intertwining the two. Reading this book would be an opportunity for students to learn about gender fluidity." -LPS 8th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1trTlibxV5tTnMcUnM31f6Fcu6Da-x-bO" alt="" />
+    <div class="title">Furthermore and Whichwood by Tahereh Mafi</div>
+    <p>"Because it's good, and eye opening for students. It definitely changed my perspective on things." -LPS 8th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1_8oMq92w6qrw2Vmp0PsJXXVxT8Lv8P_j" alt="" />
+    <div class="title">Eyes that Kiss in the Corners: Joanna Ho</div>
+    <p>"I wished I had this book when I was younger, and I feel like there should be more books like this for every ethnic background." -LPS 8th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1Fb3l4t6MRARkhqEMCxGz75W81pLO09r5" alt="" />
+    <div class="title">Drawn Together - Minh Lê</div>
+    <p>"The art is not only really eye-catching but I really adore the overall story. I feel as an Asian-American that many others in my position are becoming more and more distant from their asian heritage. This highlights and recognizes that gap while also encouraging for exploration. " -LPS 8th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=1G0VKgbFbMW5DVCfnavv6fVMHNEEqMhxL" alt="" />
+    <div class="title">Girl in Translation by Jean Kwok</div>
+    <p>"It’s an interesting story " -LPS 11th grader      </p>
+    </div>
+  </div>
+  <div class="filterDiv  ">
+  	<div class="content">
+    <img src="http://drive.google.com/uc?export=view&id=18u06-O3hEYKhMGcRevJGyHszCtbWD3UD" alt="" />
+    <div class="title">Outliers by Malcolm Gladwell</div>
+    <p>"This book explores the reason and logic as to why certain people will always have built in life advantages. It opens the eyes of young children to the real world and how it functions. " -LPS 10th grader      </p>
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+var $grid = $('.container').imagesLoaded( function() {
+  $grid.masonry({
+    itemSelector: '.filterDiv',
+  }); 
+});
+</script>
+
+</body>
+</html>
